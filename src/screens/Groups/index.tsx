@@ -7,6 +7,7 @@ import { Highlight } from '@components/Highlight';
 import { GroupCard } from '@components/GroupCard';
 
 import { Container } from './styles';
+import { Button } from '@components/Button';
 
 export function Groups() {
   const [groups, setGroups] = useState<string[]>([]);
@@ -23,6 +24,8 @@ export function Groups() {
         contentContainerStyle={groups.length === 0 && { flex: 1 }}
         ListEmptyComponent={<EmptyList message="Nenhuma turma criada" />}
       />
+
+      <Button text="Criar nova turma" />
     </Container>
   );
 }
