@@ -1,6 +1,9 @@
+import { Input } from '@components/Input';
 import { Header } from '@components/Header';
 import { Highlight } from '@components/Highlight';
-import { Container } from './styles';
+import { ButtonIcon } from '@components/ButtonIcon';
+
+import { Container, Form } from './styles';
 
 export function Players() {
   return (
@@ -8,6 +11,11 @@ export function Players() {
       <Header showBackButton />
 
       <Highlight title="Nome da turma" subtitle="Adicione a galera os times" />
+
+      <Form>
+        <Input placeholder="Nome da pessoa" autoCorrect={false} />
+        <ButtonIcon icon="add" />
+      </Form>
     </Container>
   );
 }
