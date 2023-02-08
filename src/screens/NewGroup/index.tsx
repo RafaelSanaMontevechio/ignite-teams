@@ -30,9 +30,9 @@ export function NewGroup() {
       navigation.navigate('players', { group: newGroup });
     } catch (error) {
       if (error instanceof AppError) {
-        Alert.alert('Novo group', error.message);
+        Alert.alert('Novo grupo', error.message);
       } else {
-        Alert.alert('Novo group', 'Não foi possível criar o novo grupo');
+        Alert.alert('Novo grupo', 'Não foi possível criar o novo grupo');
       }
     }
   };
